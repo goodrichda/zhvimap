@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title></title>
+
+        <link rel="stylesheet" href="lib/leaflet/leaflet.css">
+        <link rel="stylesheet" href="lib/leaflet.markercluster/MarkerCluster.css">
+		<link rel="stylesheet" href="lib/leaflet.markercluster/MarkerCluster.Default.css">
+        <link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+
+        <div class="map-container">
+            <div class="page-header">
+                <h1>Zillow Home Value Index</h1>
+                <h2><i>Single Family Homes</i></h2>
+                <h2>January 2016 - August 2019</h2>
+            </div>
+                <div class ="ll-container">
+                    <div id="map">
+                    </div>
+                </div>
+            
+            <p id="psource">Home Value Index data acquired from Zillow.com/data on 9/29/2019. Aggregated data on this page is made freely available by Zillow for non-commercial use.<br>Median Income Data Source:  U.S. Census Bureau, 2017 American Community Survey 1-Year Estimate
+            </p>
+                <div class= "summary">
+                    <div class= "center">
+                    <p><i>Zillow</i> is an American company famous for their online real estate database. It has data on 110 million homes across the United States. Some of this data is freely available for use through their <a href="https://www.zillow.com/research/data/">research</a> portal. When plotted on a map, the data comes to life and presents new opportunities for analysis.<br><br> This map displays Zillow's Home Value Index (similar to a median home value index) for the top 30 most populous US cities from January 2016 - August 2019.<br><br> This map is intended to inspire people to look at trends in the data and ask questions. For example:<br>
+                        <li>Which markets are growing the fastest?</li>
+                        <li>Are any markets declining?</li>
+                        <li>Do certain locations spike in value at any particular time of year?</li>
+                        <li>Where are there gaps between incomes and home values?</li>
+                    <br>
+                    This map should be considered a starting point for these types of questions surrounding the geography of real estate. A wealth of data is available for all to discover, and the possibilities are endless.
+                    </p>
+                    </div>
+                </div>
+            
+        </div>
+        
+        
+        
+        <script type="text/javascript" src="lib/jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="lib/leaflet/leaflet-src.js"></script>
+        <script type="text/javascript" src="lib/leaflet.markercluster/leaflet.markercluster-src.js"></script>
+        <script type="text/javascript" src="lib/esri-leaflet/esri-leaflet.js"></script>
+        <script type="text/javascript" src="lib/leaflet-search/leaflet-search.js"></script>
+        <script type="text/javascript" src="js/mdincome.js"></script>
+		<script type="text/javascript" src="js/homevalue.js"></script>
+        <!--script type="text/javascript" src="js/geojson.js"></script-->
+	</body>
+</html>
